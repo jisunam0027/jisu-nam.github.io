@@ -37,7 +37,7 @@
 <!--    <h3>M.S./Ph.D. integrated student</h3>-->
     <hr>
     <p>I am a graduate student in the Department of Computer Science and Engineering at Korea University under the supervision of Prof. <a href="https://cvlab.korea.ac.kr/" target="_blank">
-		Seungryong Kim</a>. My research is in computer vision and deep learning, I am particularly interested in diffusion-based generative models and visual correspondence.
+		Seungryong Kim</a>. My research is in computer vision and deep learning, I am particularly interested in diffusion-based generative models and visual correspondence. For more information, please refer to my <a href="AboutPageAssets/images/cv.pdf" target="_blank">CV</a>.<br>
 	<br>
     </p>
   </section>
@@ -78,33 +78,32 @@
   <h2 class="sectionTitle">Publications</h2>
     <hr class="sectionTitleRule">
     <hr class="sectionTitleRule2">
-	  <!-- SMM  -->
+	<!-- DreamMatcher  -->
 	  	<div class="sectionContent">
-<!--	 		<img align="center" src="AboutPageAssets/images/teaser-multidiffusion.jpg" style="height: 100%; width: 100%; object-fit: contain"  alt="">-->
-			<img src="AboutPageAssets/teasers/dreammatcher_teaser.png" alt="DreamMatcher Teaser Image" width="100%">
-
+<img src="AboutPageAssets/teasers/dreammatcher_teaser.png" alt="DreamMatcher Teaser Image" width="100%">
 	  	</div>
 	  	<section class="section2Content">
-      		<h2 class="sectionContentTitle"> DreamMatcher: Appearance Matching Self-Attention for Semantically-Consistent Text-to-Image Personalization
-      		<h3 class="sectionContentSubTitle"><b>Jisu Nam</b>, <a>Heesu Kim</a>, <a>DongJae Lee</a>, <a>Siyoon Jin</a>, <a>Seungryong Kim</a>, <a>Seunggyu Chang</a> 
+      		<h2 class="sectionContentTitle"> DreamMatcher: Appearance Matching Self-Attention for Semantically-Consistent Text-to-Image Personalization</h2>
+      		<h3 class="sectionContentSubTitle"><b>Jisu Nam</b>, <a>Heesu Kim</a>, <a>DongJae Lee</a>, <a>Siyoon Jin</a>, <a>Seungryong Kim<sup>&dagger;</sup></a>, <a>Seunggyu Chang<sup>&dagger;</sup></a> 
 	 		</h3>
-		  	<h3 class="sectionContentSubTitle"><em>under review<b style="color:darksalmon"></b>
+		  	<h3 class="sectionContentSubTitle"><em> CVPR 2024
 	 		</em></h3>
     	</section>
 		<aside class="externalResourcesNav">
 
-
+		  <div class="dropdown"><span></span><a href="https://ku-cvlab.github.io/DreamMatcher/" target="_blank">Project Page</a></div>
 		  <div class="dropdown"> <span>Abstract</span>
 			<div class="dropdown-content">
-			  <p style="text-align:left;">The objective of Text-to-Image (T2I) personalization is to customize diffusion models to a user-provided reference concept, generating diverse images of the reference concept aligned with target prompts. Prior methods for T2I personalization utilize the tuning of pre-trained T2I model weights. However, they require a cumbersome tuning process for each concept before generating personalized images. To ease the use of T2I personalization, we propose DreamMatcher, a tuning-free plug-in method that provides semantically aligned visual conditions of the reference concept to a diffusion model during the denoising process. We find that the key and value in the self-attention module play important roles in generating the structure and appearance of a personalized image, respectively. Hence, DreamMatcher replaces the target values with reference values aligned by semantic matching, leaving the structure path unchanged to preserve the versatile capability of pre-trained T2I models for generating diverse structures. We also employ a semantic-consistent masking strategy to isolate regions irrelevant to the personalized concept, such as the background, from core regions that should be replaced by the aligned appearances. DreamMatcher is compatible with existing T2I models, showing significant improvements in complex, non-rigid scenarios. Intensive experiments demonstrate the effectiveness and superiority of our approach compared to other baselines.	  </p></div>
+			  <p style="text-align:left;">The objective of Text-to-Image (T2I) personalization is to customize a diffusion model to a user-provided reference concept, generating diverse images of the concept aligned with the target prompts. Conventional methods for T2I personalization represent the reference concepts using unique text embeddings. However, they often fail to accurately mimic the appearance of the reference. To address this, one solution may be explicitly conditioning the reference images into the target denoising process, called key-value replacement. However, prior works are constrained to local editing since they disrupt the structure path of the pre-trained T2I model, leading to suboptimal matching. To overcome this, we propose a novel plug-in method, DreamMatcher, which reformulates T2I personalization as semantic matching. Specifically, DreamMatcher replaces the target values with reference values aligned by semantic matching, while leaving the structure path unchanged to preserve the versatile capability of pre-trained T2I models for generating diverse structures. We also introduce a semantic-consistent masking strategy to isolate the personalized concept from irrelevant regions, such as the background or objects newly introduced by the target prompts. DreamMatcher is compatible with any existing T2I models, showing significant improvements in complex personalization scenarios. Intensive experiments and analyses demonstrate the effectiveness of our approach.			  </p></div>
 		  </div>
-		 </aside>
+		  <div class="dropdown"><span></span><a href="https://arxiv.org/abs/2402.09812" target="_blank">Paper</a></div>
+		  <div class="dropdown"><span></span><a href="https://github.com/KU-CVLAB/DreamMatcher" target="_blank">Code</a></div>
+		</aside>
 
 	  <br><br>
 
-	  <!-- TokenFlow  -->
+	  <!-- DiffMatch  -->
 	  	<div class="sectionContent">
-<!--	 		<img align="center" src="AboutPageAssets/images/teaser-multidiffusion.jpg" style="height: 100%; width: 100%; object-fit: contain"  alt="">-->
 <img src="AboutPageAssets/teasers/diffmatch_teaser.png" alt="DiffMatch Teaser Image" width="100%">
 	  	</div>
 	  	<section class="section2Content">
@@ -112,7 +111,7 @@
       		<h3 class="sectionContentSubTitle"><b>Jisu Nam</b>, <a>Gyuseong Lee</a>, <a>Sunwoo Kim</a>, <a>Hyeonsu Kim</a>, <a>Hyoungwon Cho</a>, <a>Seyeon Kim</a>, <a>Seungryong
 Kim</a>  
 	 		</h3>
-		  	<h3 class="sectionContentSubTitle"><em>International Conference on Learning Representations (ICLR) 2024 , <b style="color:darksalmon">Oral, 1.2% acceptance rate</b>
+		  	<h3 class="sectionContentSubTitle"><em>ICLR 2024, <b style="color:darksalmon">Oral, 1.2% acceptance rate</b>
 	 		</em></h3>
     	</section>
 		<aside class="externalResourcesNav">
@@ -128,16 +127,15 @@ Kim</a>
 
 	  <br><br>
 
-	  <!-- MultiDiffuse  -->
+	  <!-- DiffFace  -->
 	  	<div class="sectionContent">
-<!--	 		<img align="center" src="AboutPageAssets/images/teaser-multidiffusion.jpg" style="height: 100%; width: 100%; object-fit: contain"  alt="">-->
 			<img src="AboutPageAssets/teasers/diffface_teaser.png" alt="DiffFace Teaser Image" width="100%">
 	  	</div>
 	  	<section class="section2Content">
       		<h2 class="sectionContentTitle"> DiffFace: Diffusion-based Face Swapping with Facial Guidance</h2>
       		<h3 class="sectionContentSubTitle">Kihong Kim, Yunho Kim, Seokju Cho, Junyoung Seo, <b>Jisu Nam</b>, Kychul Lee, Seungryong
 Kim and KwangHee Lee </h3>
-		  	<h3 class="sectionContentSubTitle"><em>arXiv, 2022<b style="color:darksalmon"></b>
+		  	<h3 class="sectionContentSubTitle"><em>arXiv 2022<b style="color:darksalmon"></b>
 	 		</em></h3>
     	</section>
 		<aside class="externalResourcesNav">
@@ -154,16 +152,15 @@ Kim and KwangHee Lee </h3>
 
 	  <br><br>
 
-    	<!-- Text2LIVE  -->
+    	<!-- NeMF  -->
 	  	<div class="sectionContent">
-<!--	 		<img align="center" src="AboutPageAssets/images/volsdf_2.gif" style="height: 100%; width: 100%; object-fit: contain"  alt="">-->
 		<img src="AboutPageAssets/teasers/nemf_teaser.png" alt="nemf Teaser Image" width="100%">
 	  	</div>
 	  	<section class="section2Content">
       		<h2 class="sectionContentTitle"> Neural Matching Fields: Implicit Representation of Matching Fields for Visual Correspondence</h2>
       		<h3 class="sectionContentSubTitle">Sunghwan Hong, <b>Jisu Nam</b>, Seokju Cho, Susung Hong, Sangryul Jeon, Dongbo Min, and Seungryong
 Kim  </h3>
-		  	<h3 class="sectionContentSubTitle"><em>Neural Information Processing Systems (NeurIPS) 2022
+		  	<h3 class="sectionContentSubTitle"><em> NeurIPS 2022
 	 		</em></h3>
     	</section>
 		<aside class="externalResourcesNav"> 
@@ -181,15 +178,14 @@ Kim  </h3>
 	  
 		<br><br>
 		
-	  <!-- Text2LIVE  -->
+	  <!--VAT  -->
 	  <div class="sectionContent">
-<!--	 		<img align="center" src="AboutPageAssets/images/volsdf_2.gif" style="height: 100%; width: 100%; object-fit: contain"  alt="">-->
 		<img src="AboutPageAssets/teasers/vat_teaser.png" alt="vat Teaser Image"  width="100%">
 	  	</div>
 	  	<section class="section2Content">
       		<h2 class="sectionContentTitle"> Cost Aggregation with 4D Convolutional Swin Transformer for Few-Shot Segmentation</h2>
 			  <h3 class="sectionContentSubTitle">Sunghwan Hong*, Seokju Cho*, <b>Jisu Nam</b>, Stephen Lin, Seungryong Kim</h3>
-		  	<h3 class="sectionContentSubTitle"><em>European Conference on Computer Vision (ECCV), 2022
+		  	<h3 class="sectionContentSubTitle"><em>ECCV 2022
 	 		</em></h3>
     	</section>
 		<aside class="externalResourcesNav">
