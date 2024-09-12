@@ -36,15 +36,16 @@
     <h1>Jisu Nam</h1>
 <!--    <h3>M.S./Ph.D. integrated student</h3>-->
     <hr>
-    I am an integrated M.S./Ph.D student in the Department of Computer Science and Engineering at Korea University under the supervision of Prof. <a href="https://cvlab.korea.ac.kr/" target="_blank">
-		Seungryong Kim</a>. My research is in computer vision and deep learning, I am particularly interested in diffusion-based generative models and visual correspondence. For more information, please refer to my <a href="AboutPageAssets/images/cv.pdf" target="_blank">CV</a>.<br>
+    I am a 3rd year Ph.D. student at <a href="https://cvlab.kaist.ac.kr/" target="_blank">Computer Vision LAB (CVLAB)</a>, advised by Prof. <a href="https://cvlab.korea.ac.kr/" target="_blank">Seungryong Kim</a> at at <a href="https://www.kaist.ac.kr/en/" target="_blank">Korea Advanced Institute of Science and Technology (KAIST)</a>.
+
+	My research primarily focuses on advancing diffusion models and their applications, particularly in text-to-image/video customization and image matching. For more information, please refer to my <a href="AboutPageAssets/images/cv.pdf" target="_blank">CV</a>.<br>
 	<br>
   </section>
   <!-- Links to Social network accounts -->
   <aside class="socialNetworkNavBar">
 	   <div class="socialNetworkNav"> 
       <!-- Add a Anchor tag with nested img tag here --> 
-		   <a href="mailto:jisu_nam@korea.ac.kr">
+		   <a href="mailto:jisunam@kaist.ac.kr">
       <img src="AboutPageAssets/images/mail.png"  alt="sample" width="30" ></a> </div>
       <div class="socialNetworkNav">
       <!-- Add a Anchor tag with nested img tag here --> 
@@ -75,9 +76,13 @@
 	<h2 class="sectionTitle">Work Experience</h2>
 	<hr class="sectionRule">
 	<br>
-	<b>Research Intern in Adobe, San Jose, CA</b> (2024.05 - 2024.08, Expected)</h2>
+	<b>Research Intern at Adobe, San Jose, CA</b> (2024.05 - 2024.08)</h2> <br>
+	Mentors: <a href "https://research.adobe.com/person/yang-zhou/"  target="_blank"> Yang Zhou</a>, <a href "https://research.adobe.com/person/feng-liu/"  target="_blank"> Feng Liu</a>, <a href "https://research.adobe.com/person/jing-shi/"  target="_blank"> Jing Shi</a>, <a href "https://research.adobe.com/person/difan-liu/"  target="_blank"> Difan Liu</a>, <a href "https://scholar.google.com/citations?user=pF2vMhgAAAAJ&hl=zh-CN"  target="_blank"> Zhan Xu</a> <br>
+	Project: Encoder-based Consistent Human Character Customization <br>
 	<br>
-	<b>Research Intern in Naver Cloud, Seoul, Korea</b> (2023.04 - 2023.10)</h2>
+	<b>Research Intern at Naver Cloud, Seoul, Korea</b> (2023.04 - 2023.10)</h2> <br>
+	Mentors: Seunggyu Chang, Heesu Kim, DongJae Lee <br>
+	Project: Training-free Semantically Consistent Text-to-Image Customization
 	<br>
 	<br>
 
@@ -88,6 +93,32 @@
   <h2 class="sectionTitle">Publications</h2>
     <hr class="sectionTitleRule">
     <hr class="sectionTitleRule2">
+
+	<!-- LocoTrack  -->
+	  	<div class="sectionContent">
+<img src="AboutPageAssets/teasers/locotrack_teaser.png" alt="Locotrack Teaser Image" width="100%">
+	  	</div>
+	  	<section class="section2Content">
+			<br>
+      		<h2 class="sectionContentTitle"> Local All-Pair Correspondence for Point Tracking</h2>
+      		<h3 class="sectionContentSubTitle"><a>Seokju Cho</a>, <a>Jiahui Huang</a>, <b>Jisu Nam</b>, <a>Honggyu An</a>, <a>Seungryong Kim<sup>&dagger;</sup></a>, <a>Joon-Young Lee<sup>&dagger;</sup></a>
+	 		</h3>
+		  	<h3 class="sectionContentSubTitle"><em> ECCV 2024
+	 		</em></h3>
+    	</section>
+		<aside class="externalResourcesNav">
+
+		  <div class="dropdown"><span></span><a href="https://ku-cvlab.github.io/locotrack/" target="_blank">Project Page</a></div>
+		  <div class="dropdown"> <span>Abstract</span>
+			<div class="dropdown-content">
+			  <p style="text-align:left;">We introduce LocoTrack, a highly accurate and efficient model designed for the task of tracking any point (TAP) across video sequences. Previous approaches in this task often rely on local 2D correlation maps to establish correspondences from a point in the query image to a local region in the target image, which often struggle with homogeneous regions or repetitive features, leading to matching ambiguities. LocoTrack overcomes this challenge with a novel approach that utilizes all-pair correspondences across regions, i.e., local 4D correlation, to establish precise correspondences, with bidirectional correspondence and matching smoothness significantly enhancing robustness against ambiguities. We also incorporate a lightweight correlation encoder to enhance computational efficiency, and a compact Transformer architecture to integrate long-term temporal information. LocoTrack achieves unmatched accuracy on all TAP-Vid benchmarks and operates at a speed almost 6 times faster than the current state-of-the-art.			  </p></div>
+		  </div>
+		  <div class="dropdown"><span></span><a href="https://arxiv.org/abs/2407.15420" target="_blank">Paper</a></div>
+		  <div class="dropdown"><span></span><a href="https://github.com/KU-CVLAB/LocoTrack" target="_blank">Code</a></div>
+		</aside>
+
+	  <br><br>
+
 	<!-- DreamMatcher  -->
 	  	<div class="sectionContent">
 <img src="AboutPageAssets/teasers/dreammatcher_teaser.png" alt="DreamMatcher Teaser Image" width="100%">
@@ -133,31 +164,6 @@ Kim</a>
 		  </div>
 		  <div class="dropdown"><span></span><a href="https://openreview.net/pdf/969f922ad6124503cc67cacd76aa7e7b928a7882.pdf" target="_blank">Paper</a></div>
 		  <div class="dropdown"><span></span><a href="https://github.com/KU-CVLAB/DiffMatch" target="_blank">Code</a></div>
-		</aside>
-
-	  <br><br>
-
-	  <!-- DiffFace  -->
-	  	<div class="sectionContent">
-			<img src="AboutPageAssets/teasers/diffface_teaser.png" alt="DiffFace Teaser Image" width="100%">
-	  	</div>
-	  	<section class="section2Content">
-      		<h2 class="sectionContentTitle"> DiffFace: Diffusion-based Face Swapping with Facial Guidance</h2>
-      		<h3 class="sectionContentSubTitle">Kihong Kim, Yunho Kim, Seokju Cho, Junyoung Seo, <b>Jisu Nam</b>, Kychul Lee, Seungryong
-Kim and KwangHee Lee </h3>
-		  	<h3 class="sectionContentSubTitle"><em>arXiv 2022<b style="color:darksalmon"></b>
-	 		</em></h3>
-    	</section>
-		<aside class="externalResourcesNav">
-
-		  <div class="dropdown"><span></span><a href="https://hxngiee.github.io/DiffFace/" target="_blank">Project Page</a></div>
-		  <div class="dropdown"> <span>Abstract</span>
-			<div class="dropdown-content">
-			  <p style="text-align:left;">In this paper, we propose a novel diffusion-based face swapping framework, called DiffFace, composed of training ID Conditional DDPM, sampling with facial guidance, and a target-preserving blending. In specific, in the training process, the ID Conditional DDPM is trained to generate face images with the desired identity. In the sampling process, we use the off-the-shelf facial expert models to make the model transfer source identity while preserving target attributes faithfully. During this process, to preserve the background of the target image, we additionally propose a target-preserving blending strategy. It helps our model to keep the attributes of the target face from noise while transferring the source facial identity. In addition, without any re-training, our model can flexibly apply additional facial guidance and adaptively control the ID-attributes trade-off to achieve the desired results. To the best of our knowledge, this is the first approach that applies the diffusion model in face swapping task. Compared with previous GAN-based approaches, by taking advantage of the diffusion model for the face swapping task, DiffFace achieves better benefits such as training stability, high fidelity, and controllability. Extensive experiments show that our DiffFace is comparable or superior to the state-of-the-art methods on the standard face swapping benchmark.		  </p>
-			</div>
-		  </div>
-		  <div class="dropdown"><span></span><a href="https://arxiv.org/abs/2212.13344" target="_blank">Paper</a></div>
-		  <div class="dropdown"><span></span><a href="https://github.com/hxngiee/DiffFace" target="_blank">Code</a></div>
 		</aside>
 
 	  <br><br>
